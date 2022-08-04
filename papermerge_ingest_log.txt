@@ -1,0 +1,97 @@
+[2022-08-04 04:58:46,644: INFO/Beat] Scheduler: Sending due task import_from_local_folder (papermerge.core.management.commands.worker.import_from_local_folder)
+[2022-08-04 04:58:46,647: INFO/MainProcess] Task papermerge.core.management.commands.worker.import_from_local_folder[740da318-b1dc-4892-8efb-02e75602403a] received
+[2022-08-04 04:58:46,648: DEBUG/ForkPoolWorker-2] Celery beat: import_from_local_folder
+[2022-08-04 04:58:46,649: INFO/ForkPoolWorker-2] Task papermerge.core.management.commands.worker.import_from_local_folder[740da318-b1dc-4892-8efb-02e75602403a] succeeded in 0.0012208240004838444s: None
+[2022-08-04 04:59:16,665: INFO/Beat] Scheduler: Sending due task import_from_local_folder (papermerge.core.management.commands.worker.import_from_local_folder)
+[2022-08-04 04:59:16,668: INFO/MainProcess] Task papermerge.core.management.commands.worker.import_from_local_folder[97187016-a59d-4094-bb6e-27dbd3403e91] received
+[2022-08-04 04:59:16,669: DEBUG/ForkPoolWorker-2] Celery beat: import_from_local_folder
+[2022-08-04 04:59:17,678: INFO/ForkPoolWorker-2] LOCAL importer: importing file
+[2022-08-04 04:59:17,678: DEBUG/ForkPoolWorker-2] LOCAL importer: creating temporary file
+[2022-08-04 04:59:17,758: DEBUG/ForkPoolWorker-2] Post save doc => normalize_pages
+[2022-08-04 04:59:17,758: DEBUG/ForkPoolWorker-2] Normalizing document 2
+[2022-08-04 04:59:17,780: DEBUG/ForkPoolWorker-2] copy_doc: /tmp/tmpc574ustb to docs/user_1/document_2/Receipt-Template.pdf
+[2022-08-04 04:59:17,780: DEBUG/ForkPoolWorker-2] LOCAL importer: document 2 has 1 pages.
+[2022-08-04 04:59:17,785: INFO/ForkPoolWorker-2] task_id=None
+[2022-08-04 04:59:17,789: DEBUG/ForkPoolWorker-2]  ocr_page user_id=1 doc_id=2 page_num=1
+[2022-08-04 04:59:17,789: DEBUG/ForkPoolWorker-2] subprocess: /usr/bin/file --mime-type -b /data/media/docs/user_1/document_2/Receipt-Template.pdf
+[2022-08-04 04:59:17,795: DEBUG/ForkPoolWorker-2] Mime Type = Mime(/data/media/docs/user_1/document_2/Receipt-Template.pdf, application/pdf)
+[2022-08-04 04:59:17,796: DEBUG/ForkPoolWorker-2] subprocess: /usr/bin/file --mime-type -b /data/media/docs/user_1/document_2/Receipt-Template.pdf
+[2022-08-04 04:59:17,800: DEBUG/ForkPoolWorker-2] OCR PDF document
+[2022-08-04 04:59:17,817: DEBUG/ForkPoolWorker-2] Extracing image for results/user_1/document_2/pages/page_1/125/page-1.jpg
+[2022-08-04 04:59:17,817: DEBUG/ForkPoolWorker-2] PPMROOT /data/media/results/user_1/document_2/pages/page_1/125 does not exists. Creating.
+[2022-08-04 04:59:17,818: DEBUG/ForkPoolWorker-2] Run:/usr/bin/pdftoppm|-jpeg|-f|1|-l|1|-scale-to-x|1550|-scale-to-y|-1|/data/media/docs/user_1/document_2/Receipt-Template.pdf|/data/media/results/user_1/document_2/pages/page_1/125/page
+[2022-08-04 04:59:17,859: DEBUG/ForkPoolWorker-2] Extracing image for results/user_1/document_2/pages/page_1/100/page-1.jpg
+[2022-08-04 04:59:17,859: DEBUG/ForkPoolWorker-2] PPMROOT /data/media/results/user_1/document_2/pages/page_1/100 does not exists. Creating.
+[2022-08-04 04:59:17,859: DEBUG/ForkPoolWorker-2] Run:/usr/bin/pdftoppm|-jpeg|-f|1|-l|1|-scale-to-x|1240|-scale-to-y|-1|/data/media/docs/user_1/document_2/Receipt-Template.pdf|/data/media/results/user_1/document_2/pages/page_1/100/page
+[2022-08-04 04:59:17,891: DEBUG/ForkPoolWorker-2] Extracing image for results/user_1/document_2/pages/page_1/75/page-1.jpg
+[2022-08-04 04:59:17,891: DEBUG/ForkPoolWorker-2] PPMROOT /data/media/results/user_1/document_2/pages/page_1/75 does not exists. Creating.
+[2022-08-04 04:59:17,891: DEBUG/ForkPoolWorker-2] Run:/usr/bin/pdftoppm|-jpeg|-f|1|-l|1|-scale-to-x|930|-scale-to-y|-1|/data/media/docs/user_1/document_2/Receipt-Template.pdf|/data/media/results/user_1/document_2/pages/page_1/75/page
+[2022-08-04 04:59:17,947: DEBUG/ForkPoolWorker-2] Extracing image for results/user_1/document_2/pages/page_1/50/page-1.jpg
+[2022-08-04 04:59:17,947: DEBUG/ForkPoolWorker-2] PPMROOT /data/media/results/user_1/document_2/pages/page_1/50 does not exists. Creating.
+[2022-08-04 04:59:17,948: DEBUG/ForkPoolWorker-2] Run:/usr/bin/pdftoppm|-jpeg|-f|1|-l|1|-scale-to-x|620|-scale-to-y|-1|/data/media/docs/user_1/document_2/Receipt-Template.pdf|/data/media/results/user_1/document_2/pages/page_1/50/page
+[2022-08-04 04:59:17,971: DEBUG/ForkPoolWorker-2] Extracing image for results/user_1/document_2/pages/page_1/10/page-1.jpg
+[2022-08-04 04:59:17,971: DEBUG/ForkPoolWorker-2] PPMROOT /data/media/results/user_1/document_2/pages/page_1/10 does not exists. Creating.
+[2022-08-04 04:59:17,971: DEBUG/ForkPoolWorker-2] Run:/usr/bin/pdftoppm|-jpeg|-f|1|-l|1|-scale-to-x|124|-scale-to-y|-1|/data/media/docs/user_1/document_2/Receipt-Template.pdf|/data/media/results/user_1/document_2/pages/page_1/10/page
+[2022-08-04 04:59:18,016: DEBUG/ForkPoolWorker-2] Run:/usr/bin/tesseract|-l|eng|/data/media/results/user_1/document_2/pages/page_1/100/page-1.jpg|/data/media/results/user_1/document_2/pages/page_1
+[2022-08-04 04:59:18,404: DEBUG/ForkPoolWorker-2] notify_txt_ready
+[2022-08-04 04:59:18,404: DEBUG/ForkPoolWorker-2] notify_txt_ready for /data/media/results/user_1/document_2/pages/page_1.txt
+[2022-08-04 04:59:18,404: DEBUG/ForkPoolWorker-2] Sending post_page_txt signal namespace=None  user_id=1 document_id=2 page_num=1 text=For Payment of:
+
+Received by: Received From:
+
+
+
+For Payment of:
+
+Received by: Received From:
+
+Check#_ CreditCard# Exp. _/.___ Sec.Code__
+RECEIPT
+
+Date; ReceiptNumber;
+Amount Received: [$ ]
+
+For Payment of :
+
+Received by: Received From:
+
+[2022-08-04 04:59:18,405: DEBUG/ForkPoolWorker-2] Run:/usr/bin/tesseract|-l|eng|/data/media/results/user_1/document_2/pages/page_1/125/page-1.jpg|/data/media/results/user_1/document_2/pages/page_1/125/page-1|hocr
+[2022-08-04 04:59:18,921: DEBUG/ForkPoolWorker-2] OCR for results/user_1/document_2/pages/page_1/125/page-1.jpg - Complete.
+[2022-08-04 04:59:18,921: DEBUG/ForkPoolWorker-2] OCR Result results/user_1/document_2/pages/page_1/125/page-1.hocr.
+[2022-08-04 04:59:18,922: DEBUG/ForkPoolWorker-2] Run:/usr/bin/tesseract|-l|eng|/data/media/results/user_1/document_2/pages/page_1/100/page-1.jpg|/data/media/results/user_1/document_2/pages/page_1/100/page-1|hocr
+[2022-08-04 04:59:19,270: DEBUG/ForkPoolWorker-2] OCR for results/user_1/document_2/pages/page_1/100/page-1.jpg - Complete.
+[2022-08-04 04:59:19,270: DEBUG/ForkPoolWorker-2] OCR Result results/user_1/document_2/pages/page_1/100/page-1.hocr.
+[2022-08-04 04:59:19,271: DEBUG/ForkPoolWorker-2] Run:/usr/bin/tesseract|-l|eng|/data/media/results/user_1/document_2/pages/page_1/75/page-1.jpg|/data/media/results/user_1/document_2/pages/page_1/75/page-1|hocr
+[2022-08-04 04:59:19,497: DEBUG/ForkPoolWorker-2] OCR for results/user_1/document_2/pages/page_1/75/page-1.jpg - Complete.
+[2022-08-04 04:59:19,498: DEBUG/ForkPoolWorker-2] OCR Result results/user_1/document_2/pages/page_1/75/page-1.hocr.
+[2022-08-04 04:59:19,498: DEBUG/ForkPoolWorker-2] Run:/usr/bin/tesseract|-l|eng|/data/media/results/user_1/document_2/pages/page_1/50/page-1.jpg|/data/media/results/user_1/document_2/pages/page_1/50/page-1|hocr
+[2022-08-04 04:59:19,810: DEBUG/ForkPoolWorker-2] OCR for results/user_1/document_2/pages/page_1/50/page-1.jpg - Complete.
+[2022-08-04 04:59:19,811: DEBUG/ForkPoolWorker-2] OCR Result results/user_1/document_2/pages/page_1/50/page-1.hocr.
+[2022-08-04 04:59:19,811: DEBUG/ForkPoolWorker-2]  user_id=1 doc_id=2 page_num=1 page_type=pdf total_exec_time=2.02
+[2022-08-04 04:59:19,811: DEBUG/ForkPoolWorker-2] Page hocr ready: document_id=2 page_num=1
+[2022-08-04 04:59:19,811: DEBUG/ForkPoolWorker-2] apply_automates: Begin.
+[2022-08-04 04:59:19,825: DEBUG/ForkPoolWorker-2] No automates for user admin. Quit.
+[2022-08-04 04:59:19,838: DEBUG/ForkPoolWorker-2] Page hocr ready: document_id=2 page_num=1
+[2022-08-04 04:59:19,838: DEBUG/ForkPoolWorker-2] apply_automates: Begin.
+[2022-08-04 04:59:19,850: DEBUG/ForkPoolWorker-2] No automates for user admin. Quit.
+[2022-08-04 04:59:19,856: DEBUG/ForkPoolWorker-2] LOCAL importer: import complete.
+[2022-08-04 04:59:19,856: INFO/ForkPoolWorker-2] LOCAL importer: payload processed successfully
+[2022-08-04 04:59:19,858: ERROR/ForkPoolWorker-2] Task papermerge.core.management.commands.worker.import_from_local_folder[97187016-a59d-4094-bb6e-27dbd3403e91] raised unexpected: PermissionError(13, 'Permission denied')
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/papermerge/core/management/commands/worker.py", line 70, in import_from_local_folder
+    import_documents(settings.PAPERMERGE_IMPORTER_DIR)
+  File "/usr/local/lib/python3.8/dist-packages/papermerge/core/importers/local.py", line 54, in import_documents
+    os.remove(file_path)
+PermissionError: [Errno 13] Permission denied: '/consume/Receipt-Template.pdf'
+[2022-08-04 04:59:28,584: INFO/Beat] Scheduler: Sending due task txt2db (papermerge.core.management.commands.worker.txt2db)                                    [2022-08-04 04:59:28,587: INFO/MainProcess] Task papermerge.core.management.commands.worker.txt2db[f0af4091-e8fb-4984-8989-02d3fe3a6022] received              [2022-08-04 04:59:28,588: DEBUG/ForkPoolWorker-2] Celery beat: txt2db
+[2022-08-04 04:59:28,605: DEBUG/ForkPoolWorker-2] text saved. len(page.text)==238
+[2022-08-04 04:59:28,608: DEBUG/ForkPoolWorker-2] text saved. len(page.text)==238
+[2022-08-04 04:59:28,630: DEBUG/ForkPoolWorker-2] Post save doc => normalize_pages
+[2022-08-04 04:59:28,630: DEBUG/ForkPoolWorker-2] Normalizing document 2
+[2022-08-04 04:59:28,640: INFO/ForkPoolWorker-2] Task papermerge.core.management.commands.worker.txt2db[f0af4091-e8fb-4984-8989-02d3fe3a6022] succeeded in 0.05194015000233776s: None
+[2022-08-04 04:59:46,673: INFO/Beat] Scheduler: Sending due task import_from_local_folder (papermerge.core.management.commands.worker.import_from_local_folder)
+[2022-08-04 04:59:46,677: INFO/MainProcess] Task papermerge.core.management.commands.worker.import_from_local_folder[99f812b8-8118-4366-a7ce-9e8a57260a56] received
